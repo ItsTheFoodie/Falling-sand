@@ -46,7 +46,7 @@
           for (let j = -extent; j <= extent; j++) {
             if (random(1) < 0.75) {
               let col = mouseCol + i;
-              let row = mouseRow + 
+              let row = mouseRow + j;
               if (col >= 0 && col <= cols-1 &&  row >= 0 && row <= rows-1) {
                 grid[col][row] = 1;
               }
