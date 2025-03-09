@@ -12,8 +12,8 @@
         function make2DArray(cols,rows){
             let arr = new Array(cols);
             for (let i = 0; i < arr.length; i++){
-            arr[i] = new Array(rows);
-            for(let j = 0; j < arr[i].length; j++)
+              arr[i] = new Array(rows);
+              for(let j = 0; j < arr[i].length; j++){
                 arr [i][j] = 0;
         }
         return arr;
@@ -38,8 +38,8 @@
       }
       
       function mouseDragged() {
-        let col = floor(mouseX / w);
-        let row = floor(mouseY / w);
+        let mouseCol = floor(mouseX / w);
+        let mouseRow = floor(mouseY / w);
         let matrix = 5;
         let extent = floor(matrix / 2);
         for (let i = -extent; i <= extent; i++) {
